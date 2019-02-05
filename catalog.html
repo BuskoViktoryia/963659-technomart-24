@@ -34,7 +34,8 @@
 
     <div class="login-link">
       <a href="#">Равшан Джамшутович</a>
-      <a class="user-navigation" href="delivery.html">Мои заказы</a>
+      <a class="link" href="#" title="Выйти">Выйти</a>
+      <a class="user-navigation" href="personal-order.html">Мои заказы</a>
       <a class="user-navigation" href="personal-account.html">Личный кабинет</a>
     </div>
 
@@ -61,36 +62,35 @@
     <h2>Перфораторы</h2>
     <section class="filters">
       <h3 class="#">Фильтр:</h3>
-      <div>
-        <form action="https://echo.htmlacademy.ru" method="post" oninput="price.value=price.value">
-          <fieldset>
-            <legend>Цена:</legend>
-            <input type="range" id="price" name="price" min="0" max="50000" value="30000" step="1">
-            <output name="price">30000</output>
-          </fieldset>
-          <fieldset>
-            <legend>Производители:</legend>
-            <label for="BOSCH">BOSCH</label>
-            <input type="checkbox" id="BOSCH" name="BOSCH" value="BOSCH">
-            <label for="ИНТЕРСКОЛ">ИНТЕРСКОЛ</label>
-            <input type="checkbox" id="ИНТЕРСКОЛ" name="ИНТЕРСКОЛ" value="ИНТЕРСКОЛ">
-            <label for="ИНТЕРСКОЛ">MAKIta</label>
-            <input type="checkbox" id="MAKIta" name="MAKIta" value="MAKIta">
-            <label for="ИНТЕРСКОЛ">Dewalt</label>
-            <input type="checkbox" id="Dewalt" name="Dewalt" value="Dewalt">
-            <label for="ИНТЕРСКОЛ">Hitachi</label>
-            <input type="checkbox" id="Hitachi" name="Hitachi" value="Hitachi">
-          </fieldset>
-          <fieldset>
-            <legend>Питание:</legend>
-            <label for="cordless"> Аккумуляторные</label>
-            <input type="radio" id="cordless" name="cordless" value="Аккумуляторные" checked>
-            <label for="network">Сетевые</label>
-            <input type="radio" id="network" name="network" value="Сетевые">
-          </fieldset>
-        </form>
+
+      <form action="https://echo.htmlacademy.ru" method="post" oninput="price.value=price.value">
+        <fieldset>
+          <legend>Цена:</legend>
+          <input type="range" id="price" name="price" min="0" max="50000" value="30000" step="1">
+          <output name="price">30000</output>
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+          <label for="Bosch">Bosch</label>
+          <input type="checkbox" id="BOSCH" name="Bosch" value="Bosch">
+          <label for="Intersckol">Интерскол</label>
+          <input type="checkbox" id="Intersckol" name="Intersckol" value="Интерскол">
+          <label for="ИНТЕРСКОЛ">Makita</label>
+          <input type="checkbox" id="Makita" name="Makita" value="Makita">
+          <label for="ИНТЕРСКОЛ">Dewalt</label>
+          <input type="checkbox" id="Dewalt" name="Dewalt" value="Dewalt">
+          <label for="ИНТЕРСКОЛ">Hitachi</label>
+          <input type="checkbox" id="Hitachi" name="Hitachi" value="Hitachi">
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <label for="cordless"> Аккумуляторные</label>
+          <input type="radio" id="cordless" name="cordless" value="Аккумуляторные" checked>
+          <label for="network">Сетевые</label>
+          <input type="radio" id="network" name="network" value="Сетевые">
+        </fieldset>
         <input type="submit" id="show" name="show" value="показать">
-      </div>
+      </form>
     </section>
 
     <section class="catalog">

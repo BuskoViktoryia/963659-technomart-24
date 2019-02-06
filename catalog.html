@@ -66,8 +66,8 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <fieldset>
           <legend>Цена:</legend>
-          <input type="range" id="price" name="price" min="0" value="0" step="1">
-          <input type="range" id="price" name="price" max="30000" value="30000" step="1">
+          <input type="number" id="price" name="price" min="0" value="0" step="1">
+          <input type="number" id="price" name="price" max="30000" value="30000" step="1">
         </fieldset>
         <fieldset>
           <legend>Производители:</legend>
@@ -85,9 +85,9 @@
         <fieldset>
           <legend>Питание:</legend>
           <label for="cordless"> Аккумуляторные</label>
-          <input type="radio" id="cordless" name="cordless" value="Аккумуляторные" checked>
+          <input type="radio" id="cordless" name="power" value="Аккумуляторные" checked>
           <label for="network">Сетевые</label>
-          <input type="radio" id="network" name="network" value="Сетевые">
+          <input type="radio" id="network" name="power" value="Сетевые">
         </fieldset>
         <input type="submit" id="show" name="show" value="показать">
       </form>

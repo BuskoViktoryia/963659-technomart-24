@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -19,18 +18,18 @@
       <form class="search" action="https://echo.htmlacademy.ru" method="get">
         <input id="search" type="text" value="Поиск" placeholder="Поиск:">
       </form>
-      <a href="bookmarks.html">Закладки</a>
-      <a href="basket.html">Корзина: 10</a>
-      <a href="order.html">Оформить заказ</a>
+      <a class="main-header-bookmarks" href="bookmarks.html">Закладки</a>
+      <a class="main-header-basket" href="basket.html">Корзина: 10</a>
+      <a class="main-header-top" href="order.html">Оформить заказ</a>
     </div>
 
-    <h1>
+    <h1 class="title" >
       Интернет-магазин
       строительных материалов
       и инструментов для ремонта
     </h1>
 
-    <address>
+    <address class="address">
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </address>
@@ -62,18 +61,18 @@
       <li><a href="tools.html">Инструмент</a></li>
       <li><a class="breadcrumbs-current">Перфораторы</a></li>
     </ul>
-    <h2>Перфораторы</h2>
+    <h2 class="#">Перфораторы</h2>
     <section class="filters">
       <h3 class="#">Фильтр:</h3>
 
       <form action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
-          <legend>Цена:</legend>
+          <legend class="name-filters">Цена:</legend>
           <input type="number" id="price" name="price" min="0" value="0" step="1">
           <input type="number" id="price" name="price" max="30000" value="30000" step="1">
         </fieldset>
         <fieldset>
-          <legend>Производители:</legend>
+          <legend class="name-filters" >Производители:</legend>
           <label for="bosch">Bosch</label>
           <input type="checkbox" id="bosch" name="bosch" value="bosch">
           <label for="intersckol">Интерскол</label>
@@ -86,20 +85,20 @@
           <input type="checkbox" id="hitachi" name="hitachi" value="hitachi">
         </fieldset>
         <fieldset>
-          <legend>Питание:</legend>
+          <legend class="name-filters">Питание:</legend>
           <label for="cordless"> Аккумуляторные</label>
           <input type="radio" id="cordless" name="power" value="аккумуляторные" checked>
           <label for="network">Сетевые</label>
           <input type="radio" id="network" name="power" value="сетевые">
         </fieldset>
-        <input type="submit" id="show" name="show" value="показать">
+        <button type="submit" class="filter-button">Показать</button>
       </form>
     </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Список перфораторов</h2>
       <div>
-        <h3>Сортировка:</h3>
+        <h3 class="#">Сортировка:</h3>
         <a class="sort" href="catalog.html">По цене</a>
         <a class="sort" href="catalog.html">По типу</a>
         <a class="sort" href="catalog.html">По функционалу</a>
@@ -224,7 +223,7 @@
   </main>
 
   <footer class="main-footer">
-    <section class="footer-top">
+    <div class="footer-top">
       <a class="main-footer-logo">
         <img src="img/logo.png" width="138" height="23" alt="Логотип магазина «Техномарт»">
       </a>
@@ -249,9 +248,9 @@
           <li><a href="specials.html">Спецпредложения</a></li>
         </ul>
       </nav>
-    </section>
+    </div>
 
-    <section class="footer-botton">
+    <divclass="footer-bottom">
       <p class="footer-copyright">
         © 2010–2017 Компания «Техномарт»<br>
         Все права защищены
@@ -274,7 +273,7 @@
           <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
         </p>
       </div>
-    </section>
+    </div>
   </footer>
 </body>
 

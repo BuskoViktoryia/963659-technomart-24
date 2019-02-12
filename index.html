@@ -4,7 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,18 +19,18 @@
       <form class="search" action="https://echo.htmlacademy.ru" method="get">
         <input id="search" type="text" value="Поиск" placeholder="Поиск:">
       </form>
-      <a href="bookmarks.html">Закладки</a>
-      <a href="basket.html">Корзина: 0</a>
-      <a href="order.html">Оформить заказ</a>
+      <a class="main-header-bookmarks" href="bookmarks.html">Закладки</a>
+      <a class="main-header-basket" href="basket.html">Корзина: 0</a>
+      <a class="main-header-top" href="order.html">Оформить заказ</a>
     </div>
 
-    <h1>
+    <h1 class="title">
       Интернет-магазин
       строительных материалов
       и инструментов для ремонта
     </h1>
 
-    <address>
+    <address class="address">
       <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </address>
@@ -273,14 +276,13 @@
       <input type="submit" value="Отправить">
     </div>
   </form>
-  <span class="modal-close">X</span>
-  <!--временно-->
-</section>
+  <button class="modal-close" type="button">Закрыть</button>
+  </section>
 
 <section class="modal-map">
+  <h2 class="visually-hidden">Как до нас добраться</h2>
   <img src="img/big-map.jpg" width="940" height="446.2" alt="Карта офиса по адресу ул. Большая Конюшенная, 19">
-  <span class="modal-close">X</span>
-  <!--временно-->
+  <button class="modal-close" type="button">Закрыть</button>
 </section>
 
 </html>

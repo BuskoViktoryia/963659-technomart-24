@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+    color: #000000;
+	background-color: #ffffff;
+}
+a {
+	text-decoration: none;
+}
+/*header*/
+.main-header {
+	background-color: #f4f7f9;
+	width: 1200px;
+	height: 320px;
+}
+.header-top {
+	background-color: #293449;
+	width: 1200px;
+	height: 42px;
+	
+	color:#ffffff;
+	font-size: 17px;
+	line-height: 18px;
+}
+.main-header-logo a{
+	background-color: #ee3643;
+	background-image: url(img/logo.png);
+	background-size: 220px 47px;
+	box-shadow: 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+}
+.main-header-logo a:hover{
+	background-color: #ca2c37;
+}
+.main-header-logo a:focus{
+	background-color: #ba2732;
+}
+.main-header-bookmarks a:hover,
+.main-header-basket a:hover{
+	background-color: #212a3a;
+	color: #ffffff;
+	width: 150px;
+	height: 42px;
+}
+.main-header-bookmarks a:focus,
+.main-header-basket a:focus{
+	background-color: #161d29;
+	color:rgba(255, 255, 255, 0.6);
+	width: 150px;
+	height: 42px;
+}
+.main-header-top a{
+	background-color: #63a63e;
+	color: #ffffff;
+	width: 150px;
+	height: 42px;
+}
+.main-header-top a:hover{
+	background-color: #5fbb2d;
+	color: #ffffff;
+}
+.main-header-top a:hover{
+	background-color: #518534;
+	color: rgba(255, 255, 255, 0.5);
+}
+.search a{
+	background-color:#293449;
+	color: #ffffff;
+	width: 270px;
+	height: 42px;
+}
+.search a:hover{
+	background-color: #212a3a;
+	color: #ffffff;
+}
+.search a:focus{
+	background-color: #ffffff;
+	color: #000000;
+}
+.title {
+	color: #ee3643;
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+}
+
+.address {
+	list-style: none;
+}
+.address a {
+	color: #e9292a;
+	font-size: 21px;
+	line-height: 21px;
+	letter-spacing: 0.42px;
+}
+
+.address p {
+	color: #32425c;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.login-link {
+	list-style: none;
+}
+.login-link a{
+	color: #000000;
+	font-size: 21px;
+	line-height: 21px;
+}
+.login-link a:hover{
+	color: #ee3643;
+}
+.login-link a:focus{
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.main-navigation{
+	background-color: #32425c;
+	color:#ffffff;
+	width: 940px;
+	height: 60px;
+}
+.navigation-list {
+list-style: none;
+}
+.navigation-list a {
+	background-color: #32425c;
+	color:#ffffff;
+	font-size: 17px;
+	line-height: 17px;
+}
+.navigation-list a:hover{
+	background-color: #1d2739;
+	color:#ffffff;
+}
+.navigation-list a:focus{
+	background-color: #1d2739;
+	color:rgba(255, 255, 255, 0.5);
+}
+/*main*/
+

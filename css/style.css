@@ -205,36 +205,19 @@ font-style: normal;
 }
 
 .button {
-	color:#ffffff;
-  font-size: 14px;
+	font-size: 14px;
 	line-height: 18px;
-	background-color: #000000;
-	opacity: 0.1;
+	background-color: rgba(0, 0, 0, 0.1);
 	text-transform: uppercase;
+	color:#ffffff;
 }
 
 .button:hover {
-	opacity: 0.2;
+	background-color:rgba(0, 0, 0, 0.2);
 }
 
 .button:focus {
-	opacity: 0.3;
-}
-
-.button-slides {
-	background-color: #ee3643;
-	color:#ffffff;
-  font-size: 14px;
-	line-height: 18px;
-	text-transform: uppercase;	
-}
-
-.button-slides:hover {
-	background-color: #ca2c37;
-}
-
-.button-slides:focus {
-	background-color: #ba2732;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slides-image label {
@@ -245,10 +228,48 @@ font-style: normal;
 	background-repeat: no-repeat;
 	background-size: 620px 266px; 
 }
-	
+
 .slider-name {
   font-size: 36px;
 	line-height: 36px;
 	text-transform: uppercase;
 	font-weight: bold;	
+}
+
+.button-slides {
+	background-color: #ee3643;
+	color:#ffffff;
+  font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.button-slides:hover {
+	background-color: #ca2c37;
+}
+
+.button-slides:focus {
+	background-color: #ba2732;
+}	
+
+.popular-goods {
+	background-color: #f9f5f0;
+	color: #32425c;
+	font-weight: normal; /* визуально не совпадает с макетом*/
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.catalog-item  {
+  list-style: none;
+}
+
+.catalog-item {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 18px; /* почему то зачеркивает этот показатель*/
+	line-height: 20px;
+	font-weight: bold;
 }

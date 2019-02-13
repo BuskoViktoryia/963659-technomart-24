@@ -21,7 +21,8 @@ a {
 .main-header-logo {
   width: 110px;
   height: 18px;
-  background-color: #ee3643;
+	background-color: #ee3643;
+	font-weight: normal;
 }
 
 .main-header-logo:hover {
@@ -87,7 +88,8 @@ a {
 	color:#ee3643;
 	font-size: 16px;
 	line-height: 23px;
-  font-style: italic;
+	font-style: italic;
+	font-weight: inherit;
 }
 .address {
 background-color: #f1f5f7;
@@ -149,7 +151,104 @@ font-style: normal;
 .main-navigation:focus,
 .navigation-list li:focus {
 	background-color: #1d2739;
-	color:rgba(255, 255, 255, 0.5)
+	color:rgba(255, 255, 255, 0.5);
 }
 
 /*main*/
+
+.type-services {
+	color:#ffffff;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.type-services-mat {
+	background-color:#ffbf47;
+	background-image: url("..\img\svg-technomart\icon-1.svg");
+	background-repeat: no-repeat;
+	background-size: 44px 65px; 
+}
+
+.type-services-tool {
+	background-color:#3bbce3;
+	background-image: url("..\img\svg-technomart\icon-2.svg");
+	background-repeat: no-repeat;
+	background-size: 75px 61px; 
+}
+
+.type-services-tech {
+	background-color:#dc91d8;
+	background-image: url("..\img\svg-technomart\icon-3.svg");
+	background-repeat: no-repeat;
+	background-size: 78px 62px; 
+}
+
+.type-services-sale {
+	background-color:#8ed78f;
+	background-image: url("..\img\svg-technomart\icon-4.svg");
+	background-repeat: no-repeat;
+	background-size: 59px 72px; 
+}
+
+.type-services-del {
+	background-color:#ffc047;
+	background-image: url("..\img\svg-technomart\icon-5.svg");
+	background-repeat: no-repeat;
+	background-size: 59px 72px; 
+}
+
+.new-icon {
+	background-image: url("..\img\new.png");
+	background-repeat: no-repeat;
+	background-size: 78px 63px; 
+}
+
+.button {
+	color:#ffffff;
+  font-size: 14px;
+	line-height: 18px;
+	background-color: #000000;
+	opacity: 0.1;
+	text-transform: uppercase;
+}
+
+.button:hover {
+	opacity: 0.2;
+}
+
+.button:focus {
+	opacity: 0.3;
+}
+
+.button-slides {
+	background-color: #ee3643;
+	color:#ffffff;
+  font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;	
+}
+
+.button-slides:hover {
+	background-color: #ca2c37;
+}
+
+.button-slides:focus {
+	background-color: #ba2732;
+}
+
+.slides-image label {
+	color: #ca2c37; /*цвет белый пока картинки нет*/
+  font-size: 18px;
+	line-height: 24px;
+  background-image: url("..\img\slide-1.png");
+	background-repeat: no-repeat;
+	background-size: 620px 266px; 
+}
+	
+.slider-name {
+  font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	font-weight: bold;	
+}

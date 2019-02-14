@@ -165,41 +165,41 @@ font-style: normal;
 
 .type-services-mat {
 	background-color:#ffbf47;
-	background-image: url("..\img\svg-technomart\icon-1.svg");
+	background-image: url("../img/svg-technomart/icon-1.svg");
 	background-repeat: no-repeat;
 	background-size: 44px 65px; 
 }
 
 .type-services-tool {
 	background-color:#3bbce3;
-	background-image: url("..\img\svg-technomart\icon-2.svg");
+	background-image: url("../img/svg-technomart/icon-2.svg");
 	background-repeat: no-repeat;
 	background-size: 75px 61px; 
 }
 
 .type-services-tech {
 	background-color:#dc91d8;
-	background-image: url("..\img\svg-technomart\icon-3.svg");
+	background-image: url("../img/svg-technomart/icon-3.svg");
 	background-repeat: no-repeat;
 	background-size: 78px 62px; 
 }
 
 .type-services-sale {
 	background-color:#8ed78f;
-	background-image: url("..\img\svg-technomart\icon-4.svg");
+	background-image: url("../img/svg-technomart/icon-4.svg");
 	background-repeat: no-repeat;
 	background-size: 59px 72px; 
 }
 
 .type-services-del {
 	background-color:#ffc047;
-	background-image: url("..\img\svg-technomart\icon-5.svg");
+	background-image: url("../img/svg-technomart/icon-5.svg");
 	background-repeat: no-repeat;
 	background-size: 59px 72px; 
 }
 
 .new-icon {
-	background-image: url("..\img\new.png");
+	background-image: url("../img/new.png");
 	background-repeat: no-repeat;
 	background-size: 78px 63px; 
 }
@@ -221,12 +221,12 @@ font-style: normal;
 }
 
 .slides-image label {
-	color: #ca2c37; /*цвет белый пока картинки нет*/
+	color: #ffffff;
   font-size: 18px;
 	line-height: 24px;
-  background-image: url("..\img\slide-1.png");
+  background-image: url("../img/slide-1.png");
 	background-repeat: no-repeat;
-	background-size: 620px 266px; 
+	background-size: 620px;
 }
 
 .slider-name {
@@ -236,7 +236,9 @@ font-style: normal;
 	font-weight: bold;	
 }
 
-.button-slides {
+.button-slides,
+.button-goods,
+.button-makers {
 	background-color: #ee3643;
 	color:#ffffff;
   font-size: 14px;
@@ -253,10 +255,14 @@ font-style: normal;
 	background-color: #ba2732;
 }	
 
-.popular-goods {
-	background-color: #f9f5f0;
+.popular-goods,
+.popular-makers {
+background-color: #f9f5f0;	
+}
+.popular-goods h2,
+.popular-makers h2 {
 	color: #32425c;
-	font-weight: normal; /* визуально не совпадает с макетом*/
+	font-weight: normal;
 	font-size: 30px;
 	line-height: 30px;
 }
@@ -265,11 +271,166 @@ font-style: normal;
   list-style: none;
 }
 
-.catalog-item {
+.catalog {
 	background-color: #ffffff;
 	color: #000000;
 	font-family: "PT Sans", Arial, sans-serif;
-	font-size: 18px; /* почему то зачеркивает этот показатель*/
-	line-height: 20px;
 	font-weight: bold;
 }
+.catalog-item {
+  font-size: 18px; /* почему то зачеркивает этот показатель*/
+	line-height: 20px;
+}	
+
+.price {
+	font-size: 17px;
+	line-height: 20px;
+	color: #a9a9a9;
+	text-decoration: line-through;
+}
+
+.price-sale {
+	background-color: #ee3643;
+	color: #ffffff;
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.button-basket {
+	font-family: "Cuprum", Arial, sans-serif;
+	background-color: #63a63e;
+}
+
+.button-basket:hover {
+	background-color: #5fbb2d;
+}
+
+.button-basket:focus {
+	background-color: #518534;
+}
+
+.button-bookmarks {
+	font-family: "Cuprum", Arial, sans-serif;
+	color: #32425c;
+	background-color: #ffffff;
+	border: 3px solid #63a63e;
+}
+
+.button-bookmarks:hover {
+	color: #32425c;
+	border: 3px solid #32425c;
+}
+
+.button-bookmarks:focus {
+	color: rgba(50, 66, 92, 0.3);
+	border: 3px solid rgba(50, 66, 92, 0.3);
+}
+
+.item-makers {
+	list-style: none;
+}
+
+.item-makers li {
+	width: 220px;
+  height: 145px;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+}
+
+.item-makers li:hover {
+	box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.item-makers li:focus {
+	opacity: 0.3; /*как картинку выполнить полупрозрачной ????*/
+	box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+.services {
+	background-color: #f2f6f8;
+}
+
+.services h2 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.services p {
+	font-size: 13px;
+	line-height: 24px;
+	color: #000000;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-weight: normal;
+}
+
+.slide-windows h3 {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 24px;
+	color: #32425c;
+	text-transform: uppercase;
+}
+
+.slider-windows-delivery{
+	background-color: #f2f6f8;
+	background-image: url("../img/slide-delivery.png");
+	background-repeat: no-repeat;
+	background-size: 468px 261px; 
+}
+
+.slide-windows-assurance{
+	background-color: #f2f6f8;
+	background-image: url("../img/slide-assuranсe.png");
+	background-repeat: no-repeat;
+	background-size: 389px 283px; 
+}
+
+.slide-windows-credit{
+	background-color: #f2f6f8;
+	background-image: url("../img/slide-credit.png");
+	background-repeat: no-repeat;
+	background-size: 465px 285px; 
+}
+
+.slider-control {
+	list-style: none;
+}
+
+.slide {
+	background-color: #32425c;
+	font-family: "Cuprum", Arial, sans-serif;
+	color: #ffffff;
+	font-size: 21px;
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.slide:hover {
+	background-color: #293449;
+}
+
+.slide:focus {
+	background-color: #ffffff;
+	color: #32425c;
+}
+
+
+
+
+
+
+
+
+

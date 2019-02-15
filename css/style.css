@@ -235,6 +235,7 @@ font-style: normal;
 	text-transform: uppercase;
 	font-weight: bold;	
 }
+
 .button-company,
 .button-slides,
 .button-goods,
@@ -428,6 +429,13 @@ font-style: normal;
 
 /*footer*/
 
+.main-footer-logo {
+  color: #ffffff;
+  border: 5px solid #ee3643;
+  box-shadow: inset rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;	
+}
+
 .footer-top {
 	background-color: #32425c;;
 }
@@ -482,10 +490,46 @@ color: #ffd180;
 	color: #ee3643;
 }
 
-
-.social-icon { /*дописать как сделать кружок?*/
-
+.social-type {
+  list-style: none;
 }
+
+.social-icon {/*не отображаются*/
+  display: flex;
+  width: 42px;
+  height: 42px;
+  background-color: #212a3a;
+}
+
+/*modal*/
+
+.modal-letter label {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.modal-letter input {
+  font-size: 13px;
+  line-height: 18px;
+  color: #a9a9a9;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.button-send input {
+	background-color: #ee3643;
+	color:#ffffff;
+  font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.modal-close {/*не отображается крестик*/
+  background-image: url("../img/svg-technomart/checkbox-off.svg");
+	background-repeat: no-repeat;
+	background-size: 21px 21px; 
+}
+
 
 
 

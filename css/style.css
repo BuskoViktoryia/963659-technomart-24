@@ -235,7 +235,7 @@ font-style: normal;
 	text-transform: uppercase;
 	font-weight: bold;	
 }
-
+.button-company,
 .button-slides,
 .button-goods,
 .button-makers {
@@ -257,8 +257,9 @@ font-style: normal;
 
 .popular-goods,
 .popular-makers {
-background-color: #f9f5f0;	
+ background-color: #f9f5f0;	
 }
+
 .popular-goods h2,
 .popular-makers h2 {
 	color: #32425c;
@@ -345,20 +346,10 @@ background-color: #f9f5f0;
 	opacity: 0.3; /*как картинку выполнить полупрозрачной ????*/
 	box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
-
-
-
-
-
-
-
-
-
-
 .services {
 	background-color: #f2f6f8;
 }
-
+.company,
 .services h2 {
 	font-size: 30px;
 	line-height: 30px;
@@ -367,7 +358,8 @@ background-color: #f9f5f0;
 	font-weight: normal;
 }
 
-.services p {
+.services p,
+.inform p {
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -426,10 +418,74 @@ background-color: #f9f5f0;
 	color: #32425c;
 }
 
+.transport-company li {
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: normal;
+}
+
+/*footer*/
+
+.footer-top {
+	background-color: #32425c;;
+}
+
+.footer-bottom {
+	background-color: #293449;
+}
+.button-social,
+.footer-email span,
+.footer-copyright {
+  color: #ffffff;
+  font-size: 16px;
+	line-height: 18px;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: normal;
+}
+
+.footer-info,
+.footer-goods,
+.social-button {
+	list-style: none;
+}
+
+.contacts a,
+.contacts p,
+.footer-info li,
+.footer-goods li {
+	color: #f1f5f7;  /*не активен ????*/
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "Cuprum", Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.footer-goods li:hover,
+.footer-info li:hover,
+.button-social:hover {
+  text-decoration: underline;
+}
+
+.footer-goods li:focus,
+.footer-info li:focus {   /*не активно????*/
+	opacity: 0,5;
+}
+
+.button-social {
+color: #ffd180;
+}
+
+.button-social:focus {
+	color: #ee3643;
+}
 
 
+.social-icon { /*дописать как сделать кружок?*/
 
-
+}
 
 
 

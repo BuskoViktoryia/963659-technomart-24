@@ -19,8 +19,8 @@ a {
 }
 
 .main-header-logo {
-  width: 110px;
-  height: 18px;
+  width: 220px;
+	height: 47px;
 	background-color: #ee3643;
 	font-weight: normal;
 }
@@ -67,6 +67,11 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.main-header-bookmarks:active,
+.main-header-basket:active { /*когда есть закладка или товар в карзине*/
+ background-color: #ee3643;
+}
+
 .main-header-top {
 	background-color: #63a63e;
 	color: #ffffff;
@@ -92,8 +97,8 @@ a {
 	font-weight: inherit;
 }
 .address {
-background-color: #f1f5f7;
-font-style: normal;
+  background-color: #f1f5f7;
+  font-style: normal;
 }
 
 .address a {
@@ -101,6 +106,7 @@ font-style: normal;
 	font-size: 21px;
 	line-height: 21px;
 	letter-spacing: 0.42px;
+	border: 3px solid #ffffff;
 }
 
 .address p {
@@ -110,7 +116,7 @@ font-style: normal;
 }
 
 .login-link {
-  background-color: #ffffff;
+	background-color: #ffffff;
   color: #000000;
 	font-size: 21px;
 	line-height: 21px;
@@ -119,10 +125,47 @@ font-style: normal;
 .login-link:hover {
 	color: #ee3643;
 }
-.login-link :focus {
+
+.login-link:focus {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.login-link-enter {
+	background-image: url("../img/svg-technomart/icon-user.svg");
+	background-repeat: no-repeat;
+	background-size: 20px 18px;
+	color: #000000;
+}
+
+.login-link-enter:hover { /*куда отнести ваше имя-отправить????*/
+	border: 2px solid #b5b5b5;
+}
+
+.login-link-enter:focus {
+	border: 2px solid #ee3643;
+	opacity: rgba(0, 0, 0, 0.3);
+}
+
+.login-link-exit {
+	background-image: url("../img/svg-technomart/icon-logout.svg");
+	background-repeat: no-repeat;
+	background-size: 20px 17px;
+}
+
+.user-navigation a {
+	color: #32425c;
+	font-size: 16px;
+	line-height: 18px;
+	text-decoration: underline;
+}
+
+.user-navigation a:hover {
+	color: #ee3643;
+}
+
+.user-navigation a:focus {
+	color: rgba(50, 66, 92, 0.3);
+}
 
 .main-navigation,
 .navigation-list {
@@ -236,6 +279,7 @@ font-style: normal;
 	font-weight: bold;	
 }
 
+.button-order,
 .button-company,
 .button-slides,
 .button-goods,
@@ -278,11 +322,12 @@ font-style: normal;
 	color: #000000;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: bold;
-}
-.catalog-item {
-  font-size: 18px; /* почему то зачеркивает этот показатель*/
+	font-size: 18px; /* почему то зачеркивает этот показатель*/
 	line-height: 20px;
-}	
+}
+
+.catalog-item {
+  }	
 
 .price {
 	font-size: 17px;
@@ -344,14 +389,19 @@ font-style: normal;
 }
 
 .item-makers li:focus {
-	opacity: 0.3; /*как картинку выполнить полупрозрачной ????*/
 	box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
+
+.item-makers li a:focus {
+	opacity: 0.3; 
+}
+	
 .services {
 	background-color: #f2f6f8;
 }
 .company,
-.services h2 {
+.services h2,
+.about-perforators h2 {
 	font-size: 30px;
 	line-height: 30px;
 	color: #000000;
@@ -360,7 +410,8 @@ font-style: normal;
 }
 
 .services p,
-.inform p {
+.inform p,
+.about-perforators p {
 	font-size: 13px;
 	line-height: 24px;
 	color: #000000;
@@ -460,15 +511,24 @@ font-style: normal;
 }
 
 .contacts a,
-.contacts p,
-.footer-info li,
-.footer-goods li {
-	color: #f1f5f7;  /*не активен ????*/
+.contacts p {
+	color: #f1f5f7;
 	font-size: 18px;
 	line-height: 24px;
 	font-family: "Cuprum", Arial, sans-serif;
 	font-weight: normal;
 	font-style: normal;
+}
+
+.footer-info li a,
+.footer-goods li a {
+	color: #f1f5f7;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.footer-goods li a {
+	color: #ffd180;
 }
 
 .footer-goods li:hover,
@@ -477,9 +537,9 @@ font-style: normal;
   text-decoration: underline;
 }
 
-.footer-goods li:focus,
-.footer-info li:focus {   /*не активно????*/
-	opacity: 0,5;
+.footer-goods li a:focus,
+.footer-info li a:focus {
+	opacity: 0.5;
 }
 
 .button-social {
@@ -494,11 +554,30 @@ color: #ffd180;
   list-style: none;
 }
 
-.social-icon {/*не отображаются*/
-  display: flex;
-  width: 42px;
-  height: 42px;
-  background-color: #212a3a;
+.social-type li {
+	background-color: #212a3a;
+	width: 42px;
+	height: 42px;
+	border-radius: 42px;}
+
+.social-icon-vk {
+	background-image: url("../img/svg-technomart/icon-vk.svg");
+	background-repeat: no-repeat;
+}
+
+.social-icon-fb {
+	background-image: url("../img/svg-technomart/icon-fb.svg");
+	background-repeat: no-repeat;
+}
+
+.social-icon-insta {
+	background-image: url("../img/svg-technomart/icon-insta.svg");
+	background-repeat: no-repeat;
+}
+
+.social-type li:hover,
+.social-type li:focus {
+  background-color: #ee3643;
 }
 
 /*modal*/
@@ -524,13 +603,143 @@ color: #ffd180;
 	font-weight: normal;
 }
 
-.modal-close {/*не отображается крестик*/
-  background-image: url("../img/svg-technomart/checkbox-off.svg");
+.modal-close {
+  background-image: url("../img/svg-technomart/icon-close.svg");
 	background-repeat: no-repeat;
 	background-size: 21px 21px; 
 }
 
+.button-continue {
+	background-color: #ffffff;
+	color: #000000;
+  font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.order-catalog {
+	background-color: #f1f1f1;
+}
+
+.modal-backet {
+	background-image: url("../img/svg-technomart/icon-mark.svg");
+	background-repeat: no-repeat;
+	background-size: 66px 66px; 
+}
+
+/*main catalog*/
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs-home {
+	background-image: url("../img/svg-technomart/icon-home.svg");
+	background-repeat: no-repeat;
+	background-size: 14px 12px; 
+}
+
+.breadcrumbs-catalog,
+.breadcrumbs-tools,
+.breadcrumbs-current,
+.catalog-filter,
+.catalog-sort {
+	font-family: "PT Sans", Arial,sans-serif;
+	color: #000000;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+ 
+.catalog-list{
+	background-color:#f2f6f8;
+	color: #32425c;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.catalog-filter,
+.catalog-sort {
+	background-color:#f7f3ec;
+	font-weight: normal;
+}
 
 
+/*цена производители питание доделать*/
+
+
+
+.sort {
+	color: rgba(0, 0, 0, 0.3);
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sort:hover {
+	color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sort:focus {
+	color: #ee3643;
+	border-bottom: none;
+}
+
+.pagination-list {
+	list-style: none;
+}
+
+.pagination-list li {
+  font-family: "PT Sans", Arial, sans-serif;
+	color: #000000;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.pagination-item {
+  height: 38px;
+  width: 38px;
+}
+
+.pagination-item-next {
+	height: 38px;
+	width: 140px;
+}
+
+.pagination-item,
+.pagination-item-next {
+	border: 1px solid #e5e5e5;
+	border-radius: 3px;
+}
+
+.pagination-item:hover,
+.pagination-item-next:hover {
+	border: 1px solid #bdc6ca;
+} 
+
+.pagination-item:focus,
+.pagination-item-next:focus {
+	border: 1px solid #ee3643; /*в фокусе не рамка а текст красный*/
+} 
+
+.pagination-list .pagination-item-сurrent {
+	background-color: #ee3643;
+	color: #ffffff;    /*нет белого */
+	height: 38px;
+	width: 38px;
+	border-radius: 3px;
+}
+
+.about-perforators {
+	background-color: #f4f7f9;
+}
 
 

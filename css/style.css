@@ -15,14 +15,15 @@ a {
 }
 
 .header-top {
-	background-color: #293449;
+  background-color: #293449;
 }
 
 .main-header-logo {
   width: 220px;
 	height: 47px;
 	background-color: #ee3643;
-	font-weight: normal;
+  font-weight: normal;
+  text-align: center;
 }
 
 .main-header-logo:hover {
@@ -94,7 +95,8 @@ a {
 	font-size: 16px;
 	line-height: 23px;
 	font-style: italic;
-	font-weight: inherit;
+  font-weight: inherit;
+  text-align: left;
 }
 .address {
   background-color: #f1f5f7;
@@ -115,18 +117,18 @@ a {
 	line-height: 24px;
 }
 
-.login-link {
+.login-link a {
 	background-color: #ffffff;
   color: #000000;
 	font-size: 21px;
 	line-height: 21px;
 }
 
-.login-link:hover {
+.login-link a:hover {
 	color: #ee3643;
 }
 
-.login-link:focus {
+.login-link a:focus {
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -310,37 +312,39 @@ a {
 	color: #32425c;
 	font-weight: normal;
 	font-size: 30px;
-	line-height: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .catalog-item  {
   list-style: none;
+  font-size: 18px; /* почему то зачеркивает этот показатель*/
+	line-height: 20px;
 }
 
-.catalog {
-	background-color: #ffffff;
+.catalog-item {
+  background-color: #ffffff;
 	color: #000000;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-weight: bold;
 	font-size: 18px; /* почему то зачеркивает этот показатель*/
 	line-height: 20px;
-}
-
-.catalog-item {
-  }	
+} 
 
 .price {
 	font-size: 17px;
 	line-height: 20px;
 	color: #a9a9a9;
-	text-decoration: line-through;
+  text-decoration: line-through;
+  font-weight: bold;
 }
 
 .price-sale {
 	background-color: #ee3643;
 	color: #ffffff;
 	font-size: 17px;
-	line-height: 20px;
+  line-height: 20px;
+  font-weight: bold;
 }
 
 .button-basket {
@@ -667,10 +671,46 @@ color: #ffd180;
 	font-weight: normal;
 }
 
+.type-filters {
+ border: none;
+}
 
-/*цена производители питание доделать*/
+.type-filters legend {
+  font-family: "PT Sans", Arial,sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}	
+/*блок с вагонеткой добавить*/
 
+.type-filters input {
+  font-family: "PT Sans", Arial,sans-serif;
+  border: none;
+  background-color: #f7f3ec;
+  text-align: center;
+  font-size: 17px;
+	line-height: 18px;
+}
 
+/*иконки доделать*/
+
+.type-filters label {
+  font-family: "PT Sans", Arial,sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filters-button {
+  border: 1px solid #e5e5e5;
+  font-family: "PT Sans", Arial,sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
+}
 
 .sort {
 	color: rgba(0, 0, 0, 0.3);
@@ -742,4 +782,142 @@ color: #ffd180;
 	background-color: #f4f7f9;
 }
 
+/*сеточные стили*/
 
+html, body {
+  min-width: 1200px;
+  min-height: 3151px;
+}
+
+body {
+  background-image: url(../technomart-index.jpg);
+  background-size: 1200px auto;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  opacity: 0.7;
+}
+
+/*  */
+
+.main-header {
+  min-height: 320px;/*временно*/
+  display: flex;
+  flex-direction: column;
+}
+
+.header-top {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-top .container  {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-header-search {
+  width: 490px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-header-user {
+  width: 450px;
+  margin: 0;
+  padding: 0;
+}
+
+.container .header-middle {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.title {
+  align-content: left;
+  width: 200px;
+  padding-left: 53px;
+  padding-top: 46px;
+  padding-bottom: 44px;
+  margin: 0;
+}
+
+.address {
+  align-content: center; /*not*/
+  width: 270px;
+  padding-left: 71px;
+  padding-top: 46px;
+  padding-bottom: 44px;
+  margin: 0;
+}
+
+.login-link {
+  width: 280px;
+  margin-left: 69px;
+  padding-top: 46px;
+  padding-bottom: 44px;
+  margin: 0;
+}
+
+.main-navigation {
+  width: 100%;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.navigation-list {
+  padding-bottom: 60px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .type-services {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+div,
+section,
+a,
+ul,
+li,
+p,
+footer,
+header {
+  outline: 1px solid red;
+}

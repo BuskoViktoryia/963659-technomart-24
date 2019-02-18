@@ -13,44 +13,53 @@
 <body>
   <header class="main-header">
     <div class="header-top">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.png" width="111" height="18" alt="Логотип магазина «Техномарт»">
-      </a>
-      <form class="search" action="https://echo.htmlacademy.ru" method="get">
-        <input id="search" type="text" value="Поиск" placeholder="Поиск:">
-      </form>
-      <a class="main-header-bookmarks" href="bookmarks.html">Закладки</a>
-      <a class="main-header-basket" href="basket.html">Корзина: 0</a>
-      <a class="main-header-top" href="order.html">Оформить заказ</a>
+      <div class="container">
+        <div class="main-header-search">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/logo.png" width="111" height="18" alt="Логотип магазина «Техномарт»">
+          </a>
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <input id="search" type="text" value="Поиск" placeholder="Поиск:">
+          </form>
+        </div>
+        <div class="main-header-user">
+          <a class="main-header-bookmarks" href="bookmarks.html">Закладки</a>
+          <a class="main-header-basket" href="basket.html">Корзина: 0</a>
+          <a class="main-header-top" href="order.html">Оформить заказ</a>
+        </div>
+      </div>
     </div>
 
-    <h1 class="title">
-      Интернет-магазин
-      строительных материалов
-      и инструментов для ремонта
-    </h1>
+    <div class="container">
+      <div class="header-middle">
+        <h1 class="title">
+          Интернет-магазин строительных материалов<br>
+          и инструментов для ремонта
+        </h1>
 
-    <address class="address">
-      <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-    </address>
+        <address class="address">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </address>
 
-    <div class="login-link">
-      <a href="personal-account.html">Войти</a>
-      <a href="#">Регистрация</a>
+        <div class="login-link">
+          <a href="personal-account.html">Войти</a>
+          <a href="#">Регистрация</a>
+        </div>
+      </div>
+
+      <nav class="main-navigation">
+        <ul class="navigation-list ">
+          <li><a href="main.html">Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="specials.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-navigation">
-      <ul class="navigation-list ">
-        <li><a href="main.html">Главная</a></li>
-        <li><a href="company.html">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="specials.html">Спецпредложения</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main class="container">
@@ -63,7 +72,7 @@
         <div class="type-services-sale">Скидки 50%<a class="button" href="#">На 350 товаров</a></div>
         <div class="type-services-del">Доставка<a class="button" href="#">Бесплатно</a></div>
         <div class="slides-index">
-          <div class=slides-image>
+          <div class="slides-image">
             <label for="slider"><span class="slider-name">Дрели</span>Соседям на радость!</label>
             <input type="radio" name="slider" id="slider" checked="checked">
             <label for="slider2"><span class="slider-name">Перфораторы</span>Настоящие мужские игрушки</label>
@@ -245,7 +254,8 @@
             </a></li>
           <li><a class="social-icon-fb" href="https://www.facebook.com"><span class="visually-hidden">Фэйсбук</span>
             </a></li>
-          <li><a class="social-icon-insta" href="https://www.instagram.com"><span class="visually-hidden">Инстаграм</span>
+          <li><a class="social-icon-insta" href="https://www.instagram.com"><span
+                class="visually-hidden">Инстаграм</span>
             </a></li>
         </ul>
       </div>

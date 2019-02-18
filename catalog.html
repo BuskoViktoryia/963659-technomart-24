@@ -71,32 +71,32 @@
       <h3 class="catalog-filter">Фильтр:</h3>
 
       <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset>
+        <fieldset class="type-filters">
           <legend class="name-filters">Цена:</legend>
           <input type="number" id="min-price" name="price" min="0" value="0" step="1">
           <input type="number" id="max-price" name="price" max="30000" value="30000" step="1">
         </fieldset>
-        <fieldset>
+        <fieldset class="type-filters">
           <legend class="name-filters">Производители:</legend>
-          <label for="bosch">Bosch</label>
           <input type="checkbox" id="bosch" name="bosch" value="bosch">
-          <label for="intersckol">Интерскол</label>
+          <label for="bosch">Bosch</label>
           <input type="checkbox" id="intersckol" name="intersckol" value="интерскол">
-          <label for="makita">Makita</label>
+          <label for="intersckol">Интерскол</label>
           <input type="checkbox" id="makita" name="makita" value="makita">
-          <label for="dewalt">Dewalt</label>
+          <label for="makita">Makita</label>
           <input type="checkbox" id="dewalt" name="dewalt" value="dewalt">
-          <label for="hitachi">Hitachi</label>
+          <label for="dewalt">Dewalt</label>
           <input type="checkbox" id="hitachi" name="hitachi" value="hitachi">
+          <label for="hitachi">Hitachi</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="type-filters">
           <legend class="name-filters">Питание:</legend>
-          <label for="cordless"> Аккумуляторные</label>
           <input type="radio" id="cordless" name="power" value="аккумуляторные" checked>
-          <label for="network">Сетевые</label>
+          <label for="cordless"> Аккумуляторные</label>
           <input type="radio" id="network" name="power" value="сетевые">
+          <label for="network">Сетевые</label>
         </fieldset>
-        <button type="submit" class="filter-button">Показать</button>
+        <button type="submit" class="filters-button">Показать</button>
       </form>
     </section>
 

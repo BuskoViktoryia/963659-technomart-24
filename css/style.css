@@ -20,10 +20,11 @@ a {
 
 .main-header-logo {
   width: 220px;
-	height: 47px;
+	height: 42px;
 	background-color: #ee3643;
   font-weight: normal;
   text-align: center;
+  
 }
 
 .main-header-logo:hover {
@@ -39,6 +40,7 @@ a {
   color: #ffffff;
   font-size: 17px;
   line-height: 18px;
+  border: none;
 }
 
 .search input:hover {
@@ -76,8 +78,6 @@ a {
 .main-header-top {
 	background-color: #63a63e;
 	color: #ffffff;
-	width: 17px;
-	height: 18px;
 }
 
 .main-header-top:hover {
@@ -179,22 +179,16 @@ a {
   color:#ffffff;
   background-color: #32425c;
 	font-size: 17px;
-	line-height: 17px;
+  line-height: 17px;
+  box-shadow: inset 0 -5px 0 0 #293449;
 }
 
-.main-navigation a,
-.navigation-list a {
-  color:#ffffff;
-}
-
-.main-navigation:hover
-.navigation-list:hover {
+.navigation-list-item {
 	background-color: #293449;
 	color:#ffffff;
 }
 
-.main-navigation:focus,
-.navigation-list li:focus {
+.navigation-list-item {
 	background-color: #1d2739;
 	color:rgba(255, 255, 255, 0.5);
 }
@@ -209,11 +203,12 @@ a {
 }
 
 .type-services-mat {
-	background-color:#ffbf47;
-	background-image: url("../img/svg-technomart/icon-1.svg");
+  background-color:#ffbf47;
+  background-image: url("../img/svg-technomart/icon-1.svg");
 	background-repeat: no-repeat;
 	background-size: 44px 65px; 
 }
+
 
 .type-services-tool {
 	background-color:#3bbce3;
@@ -265,13 +260,20 @@ a {
 	background-color: rgba(0, 0, 0, 0.3);
 }
 
+.slides-index {
+  background-image: url("../img/slide-1.png");
+	background-repeat: no-repeat;
+}
+
+
+
+
+
 .slides-image label {
 	color: #ffffff;
   font-size: 18px;
 	line-height: 24px;
-  background-image: url("../img/slide-1.png");
-	background-repeat: no-repeat;
-	background-size: 620px;
+  
 }
 
 .slider-name {
@@ -803,11 +805,15 @@ body {
   min-height: 320px;/*временно*/
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .header-top {
   width: 100%;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -816,73 +822,242 @@ body {
   padding: 0 10px;
 }
 
-.header-top .container  {
+.header-top .container {
   display: flex;
-  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  /*display: flex;
+  justify-content: space-between;*/
 }
 
-.main-header-search {
-  width: 490px;
+.main-header-logo {
+  display: flex;
+  width: 220px;
+  min-height: 42px;/*временно*/
   margin: 0;
   padding: 0;
 }
 
-.main-header-user {
-  width: 450px;
+.search input {
+  display: flex;
+  width: 270px;
+  min-height: 42px;/*временно*/
   margin: 0;
   padding: 0;
 }
 
-.container .header-middle {
+.main-header-bookmarks {  
   display: flex;
-  justify-content: space-between;
+  width: 150px;
+  min-height: 42px;/*временно*/
+  margin: 0;
+  padding: 0;
 }
 
+.main-header-basket {
+  display: flex;
+  width: 150px;
+  min-height: 42px;/*временно*/
+  margin: 0;
+  padding: 0;
+}
+
+.main-header-top{
+  display: flex;
+  width: 150px;
+  min-height: 42px;/*временно*/
+  margin: 0;
+  padding: 0;
+} 
+
+
+
+
+
+
+.header-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 46px;
+  padding-bottom: 34px;
+  margin: 0;
+}
 
 .title {
-  align-content: left;
-  width: 200px;
-  padding-left: 53px;
-  padding-top: 46px;
-  padding-bottom: 44px;
+  display: flex;
+  width: 196px; 
+  align-items: flex-end;
   margin: 0;
+  padding-left: 53px;
 }
 
 .address {
-  align-content: center; /*not*/
+  display: flex;
+  flex-direction: column;
   width: 270px;
-  padding-left: 71px;
-  padding-top: 46px;
-  padding-bottom: 44px;
+  align-items: center;
+  padding:0;  
   margin: 0;
 }
 
 .login-link {
-  width: 280px;
-  margin-left: 69px;
-  padding-top: 46px;
-  padding-bottom: 44px;
-  margin: 0;
-}
-
-.main-navigation {
-  width: 100%;
-  margin-bottom: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  width: 300px;
+  margin: 0px;
   padding: 0;
 }
 
+.main-navigation {
+  width: 940px;
+  margin: 0;
+}
+
 .navigation-list {
-  padding-bottom: 60px;
+  min-height: 60px;
   margin: 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.container .type-services {
+.type-services,
+.type-services-item {
+  margin-top:59px;
+  margin-bottom:53px;
+}
+
+
+.type-services-item {
   display: flex;
   justify-content: space-between;
-
+  flex-wrap: wrap;
+  margin:0;
+  padding: 0;
+  width: 940px;
+  min-height: 410px;/*временно*/
 }
+
+.type-services-mat,
+.type-services-tool,
+.type-services-tech,
+.type-services-sale,
+.type-services-sale {
+  width: 300px;
+  min-height: 123px; /*временно*/
+  margin-bottom: 20px;
+}
+
+.type-services-del {
+  width: 300px;
+  min-height: 123px; /*временно*/
+  margin:0;
+  margin: 0; 
+}
+
+.slides-index {
+  width: 620px;
+  min-height: 266px; /*временно*/
+  margin: 0;
+  margin: 0;
+}
+/*.type-services-item:nth-child(3n) {
+  margin-right: 0px;}
+  .type-services-item:last-child {
+  margin-bottom: 0px;
+}*/
+
+.popular {
+  display: flex;
+  flex-direction: column;
+  /*margin-top: 50px;*/
+  margin-bottom: 23px;
+  padding: 0;
+}
+
+.popular-goods,
+.popular-makers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 940px;
+  min-height: 89px; /*временно*/
+  margin: 0;
+  padding: 0;
+}
+
+.popular-goods h1 {
+  display: flex;
+  padding-left: 0px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-goods a {
+  display: flex;
+  padding-right: 0px;
+  align-items: center;
+  margin: 0;
+}
+
+.catalog,
+.catalog-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 940px;
+  
+  margin:0px;
+  padding: 0;
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  min-height: 318px;/*временно*/
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.activ-item {
+  display: none; 
+}
+
+.list-makers {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 940px;
+  min-height: 310px;/*временно*/
+  margin:0px;
+  padding: 0;
+}
+
+.item-makers {
+  display: flex;
+ 
+  width: 220px;
+  min-height: 145px;/*временно*/
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+
+
+
+
+
+
 
 
 

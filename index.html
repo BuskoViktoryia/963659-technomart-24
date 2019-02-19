@@ -14,63 +14,58 @@
   <header class="main-header">
     <div class="header-top">
       <div class="container">
-        <div class="main-header-search">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/logo.png" width="111" height="18" alt="Логотип магазина «Техномарт»">
-          </a>
-          <form class="search" action="https://echo.htmlacademy.ru" method="get">
-            <input id="search" type="text" value="Поиск" placeholder="Поиск:">
-          </form>
-        </div>
-        <div class="main-header-user">
-          <a class="main-header-bookmarks" href="bookmarks.html">Закладки</a>
-          <a class="main-header-basket" href="basket.html">Корзина: 0</a>
-          <a class="main-header-top" href="order.html">Оформить заказ</a>
-        </div>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.png" width="111" height="18" alt="Логотип магазина «Техномарт»">
+        </a>
+        <form class="search" action="https://echo.htmlacademy.ru" method="get">
+          <input id="search" type="text" name="search" value="Поиск" placeholder="Поиск:">
+
+        </form>
+        <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
+        <a class="main-header-basket" href="basket.html">Корзина: 0</a>
+        <a class="main-header-top" href="order.html">Оформить заказ</a>
       </div>
     </div>
 
     <div class="container">
-      <div class="header-middle">
-        <h1 class="title">
-          Интернет-магазин строительных материалов<br>
-          и инструментов для ремонта
-        </h1>
-
-        <address class="address">
-          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </address>
-
-        <div class="login-link">
-          <a href="personal-account.html">Войти</a>
-          <a href="#">Регистрация</a>
+      <div>
+        <div class="header-bottom">
+          <h1 class="title">
+            Интернет-магазин строительных материалов
+            и инструментов для ремонта
+          </h1>
+          <address class="address">
+            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </address>
+          <div class="login-link">
+            <a href="personal-account.html">Войти</a>
+            <a href="#">Регистрация</a>
+          </div>
         </div>
-      </div>
 
-      <nav class="main-navigation">
-        <ul class="navigation-list ">
-          <li><a href="main.html">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="specials.html">Спецпредложения</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+        <nav class="main-navigation">
+          <ul class="navigation-list ">
+            <li><a class="navigation-list-item" href="main.html">Главная</a></li>
+            <li><a class="navigation-list-item" href="company.html">Компания</a></li>
+            <li><a class="navigation-list-item" href="catalog.html">Каталог</a></li>
+            <li><a class="navigation-list-item" href="news.html">Новости</a></li>
+            <li><a class="navigation-list-item" href="specials.html">Спецпредложения</a></li>
+            <li><a class="navigation-list-item" href="delivery.html">Доставка</a></li>
+            <li><a class="navigation-list-item" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="goods-and-services">
-      <h2 class="visually-hidden">Товары и услуги</h2>
-      <div class="type-services">
+    <section class="type-services">
+      <!--<h2 class="visually-hidden">Товары и услуги</h2>-->
+      <div class="type-services-item">
         <div class="type-services-mat">Материалы<a class="button" href="#">На любой вкус</a></div>
         <div class="type-services-tool">Инструмент<a class="button" href="#">На все случаи</a></div>
         <div class="type-services-tech">Техника<a class="button" href="#">Для стройки</a></div>
-        <div class="type-services-sale">Скидки 50%<a class="button" href="#">На 350 товаров</a></div>
-        <div class="type-services-del">Доставка<a class="button" href="#">Бесплатно</a></div>
         <div class="slides-index">
           <div class="slides-image">
             <label for="slider"><span class="slider-name">Дрели</span>Соседям на радость!</label>
@@ -79,6 +74,10 @@
             <input type="radio" name="slider2" id="slider2">
           </div>
           <a class="button-goods" href="catalog.html">Открыть каталог</a>
+        </div>
+        <div>
+          <div class="type-services-sale">Скидки 50%<a class="button" href="#">На 350 товаров</a></div>
+          <div class="type-services-del">Доставка<a class="button" href="#">Бесплатно</a></div>
         </div>
       </div>
     </section>
@@ -90,8 +89,8 @@
       </div>
       <div class="catalog">
         <ul class="catalog-list">
-          <li>
-            <h3 class="catalog-item"> Перфоратор BOSCH BFG 9000</h3>
+          <li class="catalog-item">
+            <h3> Перфоратор BOSCH BFG 9000</h3>
             <img src="img/bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
             <span class="price">32500 P.</span>
             <span class="price-sale">25500 P.</span>
@@ -138,7 +137,7 @@
         <h2>Популярные производители:</h2>
         <a class="button-makers" href="#">Все производители</a>
       </div>
-      <div>
+      <div class="list-makers">
         <ul class="item-makers">
           <li><a href="#"><img src="img/makita-logo.jpg" width="123" height="40" class="Makita" alt="makita"></a></li>
           <li><a href="#"><img src="img/de-walt-logo.jpg" width="146" height="44" class="Dewalt" alt="dewalt"></a></li>

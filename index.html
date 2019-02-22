@@ -28,34 +28,34 @@
     </div>
 
     <div class="container">
-      <div>
-        <div class="header-bottom">
-          <h1 class="title">
-            Интернет-магазин строительных материалов
-            и инструментов для ремонта
-          </h1>
-          <address class="address">
-            <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          </address>
-          <div class="login-link">
-            <a href="personal-account.html">Войти</a>
-            <a href="#">Регистрация</a>
-          </div>
-        </div>
+      <div class="header-bottom">
+        <h1 class="title">
+          Интернет-магазин строительных материалов
+          и инструментов для ремонта
+        </h1>
 
-        <nav class="main-navigation">
-          <ul class="navigation-list ">
-            <li><a class="navigation-list-item" href="main.html">Главная</a></li>
-            <li><a class="navigation-list-item" href="company.html">Компания</a></li>
-            <li><a class="navigation-list-item" href="catalog.html">Каталог</a></li>
-            <li><a class="navigation-list-item" href="news.html">Новости</a></li>
-            <li><a class="navigation-list-item" href="specials.html">Спецпредложения</a></li>
-            <li><a class="navigation-list-item" href="delivery.html">Доставка</a></li>
-            <li><a class="navigation-list-item" href="contacts.html">Контакты</a></li>
-          </ul>
-        </nav>
+        <address class="address">
+          <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </address>
+
+        <div class="login-link">
+          <a href="personal-account.html">Войти</a>
+          <a href="#">Регистрация</a>
+        </div>
       </div>
+
+      <nav class="main-navigation">
+        <ul class="navigation-list ">
+          <li><a class="navigation-list-item" href="main.html">Главная</a></li>
+          <li><a class="navigation-list-item" href="company.html">Компания</a></li>
+          <li><a class="navigation-list-item" href="catalog.html">Каталог</a></li>
+          <li><a class="navigation-list-item" href="news.html">Новости</a></li>
+          <li><a class="navigation-list-item" href="specials.html">Спецпредложения</a></li>
+          <li><a class="navigation-list-item" href="delivery.html">Доставка</a></li>
+          <li><a class="navigation-list-item" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -286,23 +286,23 @@
   </footer>
 </body>
 
-<section class="modal-letter">
+<section class="modal modal-letter">
   <h2 class="visually-hidden">Напишите нам</h2>
   <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   <form class="letter" action="https://echo.htmlacademy.ru" method="post">
     <label for="yours-name">Ваше имя:</label>
-    <input type="text" id="yours-name" name="yours-name" placeholder="Имя Фамилия" required>
+    <input type="text" id="yours-name" name="yours-name" placeholder="Имя Фамилия" focus required>
     <label for="e-mail">Ваш e-mail:</label>
     <input type="text" id="e-mail" name="e-mail" placeholder="email@example.com" required>
     <label for="letter">Текст письма:</label>
     <textarea type="text" id="letter" name="letter" rows="4" placeholder="В свободной форме" required></textarea>
-    <div class="button-send">
-      <input type="submit" value="Отправить">
+    <div class="modal-botton">
+      <input class="button button-send" type="submit" value="Отправить">
     </div>
   </form>
 </section>
 
-<section>
+<section class="modal modal-backet">
   <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   <h2 class="modal-backet">Товар добавлен в корзину!</h2>
   <div class="order-catalog">
@@ -311,7 +311,7 @@
   </div>
 </section>
 
-<section class="modal-map">
+<section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <button class="modal-close" type="button"><span>Закрыть</span></button>
   <img src="img/big-map.jpg" width="940" height="446.2" alt="Карта офиса по адресу ул. Большая Конюшенная, 19">

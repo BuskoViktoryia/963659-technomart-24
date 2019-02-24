@@ -192,7 +192,7 @@ background-color: #b52933;;
 	color: #000000;
 }
 
-.login-link-enter:hover { /*куда отнести ваше имя-отправить????*/
+.login-link-enter:hover {
 	border: 2px solid #b5b5b5;
 }
 
@@ -260,6 +260,29 @@ background-color: #b52933;;
 	font-weight: bold;
 }
 
+.box {
+	position: relative;
+	display: flex;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 22px;
+  width: 256px;
+  height: 79px;
+}
+
+.type-services-item .new-icon::before {
+	top:0;
+	right: 0px;
+	width: 78px;
+	height: 68px;
+	border: 0;
+	background-image: url("../img/new.png");
+	background-repeat: no-repeat;
+}
+
+
+
 .type-services-mat {
   background-color:#ffbf47;
   background-image: url("../img/svg-technomart/icon-1.svg");
@@ -296,20 +319,26 @@ background-color: #b52933;;
 	background-size: 59px 72px; 
 }
 
-.new-icon {
-	background-image: url("../img/new.png");
-	background-repeat: no-repeat;
-	background-size: 78px 63px; 
-}
+
 
 .button {
+	display: inline-block;
 	font-size: 14px;
 	line-height: 18px;
-	background-color: rgba(0, 0, 0, 0.1);
 	text-transform: uppercase;
-	color:#ffffff;
-	border-radius: 2px;
+  color:#ffffff;
+	background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 14px;
+  padding-bottom: 14px;  
+	border-radius: 3px;
+	text-align: center;
+	vertical-align: top;
+	margin-right: 23px;
+  padding: 10px 0;
+}
 
+.button-services {
+	width: 135px;
 }
 
 .button:hover {
@@ -319,6 +348,7 @@ background-color: #b52933;;
 .button:focus {
 	background-color: rgba(0, 0, 0, 0.3);
 }
+
 
 .slides-index {
   background-image: url("../img/slide-1.png");
@@ -1107,13 +1137,13 @@ overflow: hidden;*/
 	padding-right: 20px;
 }*/
 
-.type-services
+.type-services,
 .type-services-item {
   margin-top:59px;
   margin-bottom:53px;
 }
 
-.type-services-item{
+.type-services-item {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1123,14 +1153,13 @@ overflow: hidden;*/
   min-height: 410px;/*временно*/
 }
 
+
 .type-services-mat,
 .type-services-tool,
 .type-services-tech,
 .type-services-sale,
 .type-services-sale {
-  width: 300px;
-  min-height: 123px; /*временно*/
-  margin-bottom: 20px;
+   margin-bottom: 20px;
 }
 
 .type-services-del {
@@ -1146,11 +1175,7 @@ overflow: hidden;*/
   margin: 0;
   margin: 0;
 }
-/*.type-services-item:nth-child(3n) {
-  margin-right: 0px;}
-  .type-services-item:last-child {
-  margin-bottom: 0px;
-}*/
+
 
 .popular {
   display: flex;
@@ -1594,7 +1619,7 @@ justify-content: space-between;*/
 	left:0px;
 	background-color: #ee3643;
 }
-
+/*
 .modal-letter {
 	width: 620px;
 	min-height: 430px;

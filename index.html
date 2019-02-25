@@ -18,7 +18,7 @@
           <img src="img/logo.png" width="111" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" name="search" value="Поиск:" placeholder="Поиск:">
+          <input type="type" name="search" value="Поиск:" placeholder="Поиск:">
         </form>
         <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
         <a class="main-header-basket" href="basket.html">Корзина: 0</a>
@@ -30,7 +30,7 @@
       <div class="header-bottom">
         <h1 class="title">
           Интернет-магазин строительных материалов
-          и инструментов для ремонта
+          и&nbsp;инструментов для ремонта
         </h1>
 
         <address class="address">
@@ -63,21 +63,48 @@
       <section class="type-services">
         <h2 class="visually-hidden">Товары и услуги</h2>
         <div class="type-services-item">
-          <div class="box type-services-mat new-icon">Материалы<a class="button button-services" href="#">На любой вкус</a></div>
-          <div class="box type-services-tool">Инструмент<a class="button button-services" href="#">На все случаи</a></div>
-          <div class="box type-services-tech">Техника<a class="button button-services" href="#">Для стройки</a></div>
-          <div class="slides-index">
+          <div class="box type-services-mat new-icon">
+            <h3>Материалы</h3>
+            <a class="button button-services" href="#">На любой вкус</a>
+          </div>
+          <div class="box type-services-tool">
+            <h3>Инструмент</h3>
+            <a class="button button-services" href="#">На все случаи</a>
+          </div>
+          <div class="box type-services-tech">
+            <h3>Техника</h3>
+            <a class="button button-services" href="#">Для стройки</a>
+          </div>
+          <div class="box slides-index">
             <div class="slides-image">
-              <label for="slider"><span class="slider-name">Дрели</span>Соседям на радость!</label>
-              <input type="radio" name="slider" id="slider" checked="checked">
-              <label for="slider2"><span class="slider-name">Перфораторы</span>Настоящие мужские игрушки</label>
-              <input type="radio" name="slider2" id="slider2">
+              <label for="slider-first">
+                <h3 class="slider-name">Дрели</h3>
+                <p>Соседям на радость!</p>
+              </label>
+              <label for="slider-next">
+                <h3 class="slider-name">Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+              </label>
             </div>
-            <a class="button-goods" href="catalog.html">Открыть каталог</a>
+            <div class="slides-control">
+              <input type="radio" name="slider-1" id="slider-first" checked="checked">
+              <input type="radio" name="slider-2" id="slider-next">
+            </div>
+            <div class="slides-arrow">
+              <label for="slider-first">Предыдущий</label>
+              <label for="slider-next">Следующий</label>
+            </div>
+            <a class="button button-slides" href="catalog.html">Открыть каталог</a>
           </div>
           <div>
-            <div class="box type-services-sale">Скидки 50%<a class="button button-services" href="#">На 350 товаров</a></div>
-            <div class="box type-services-del">Доставка<a class="button button-services" href="#">Бесплатно</a></div>
+            <div class="box type-services-sale">
+              <h3>Скидки 50%</h3>
+              <a class="button button-services" href="#">На 350 товаров</a>
+            </div>
+            <div class="box type-services-del">
+              <h3>Доставка</h3>
+              <a class="button button-services" href="#">Бесплатно</a>
+            </div>
           </div>
         </div>
       </section>
@@ -85,13 +112,14 @@
       <section class="popular">
         <div class="popular-goods">
           <h2>Популярные товары:</h2>
-          <a class="button-slides" href="#">Все популярные товары</a>
+          <a class=" button button-goods" href="#">Все популярные товары</a>
         </div>
         <div class="catalog">
           <ul class="catalog-list">
             <li class="catalog-item">
-              <h3> Перфоратор BOSCH BFG 9000</h3>
+              
               <img src="img/bosch-9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
+              <h3> Перфоратор BOSCH BFG 9000</h3>
               <span class="price">32500 P.</span>
               <span class="price-sale">25500 P.</span>
               <div class="activ-item">
@@ -100,8 +128,8 @@
               </div>
             </li>
             <li class="catalog-item">
-              <h3> Перфоратор BOSCH BFG 3000</h3>
               <img src="img/bosch-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+              <h3> Перфоратор BOSCH BFG 3000</h3>
               <span class="price">22500 P.</span>
               <span class="price-sale">15500 P.</span>
               <div class="activ-item">
@@ -110,8 +138,9 @@
               </div>
             </li>
             <li class="catalog-item">
-              <h3> Перфоратор BOSCH BFG 6000</h3>
+              
               <img src="img/bosch-6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
+              <h3> Перфоратор BOSCH BFG 6000</h3>
               <span class="price">30500 P.</span>
               <span class="price-sale">25500 P.</span>
               <div class="activ-item">
@@ -119,9 +148,10 @@
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
             </li>
-            <li class="catalog-item">
-              <h3> Перфоратор BOSCH BFG 2000</h3>
+            <li class="catalog-item new-icon">
+              
               <img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
+              <h3> Перфоратор BOSCH BFG 2000</h3>
               <span class="price-sale">15500 P.</span>
               <div class="activ-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
@@ -135,23 +165,20 @@
       <section class="popular">
         <div class="popular-makers">
           <h2>Популярные производители:</h2>
-          <a class="button-makers" href="#">Все производители</a>
+          <a class="button button-makers" href="#">Все производители</a>
         </div>
-        <div class="list-makers">
-          <ul class="item-makers">
-            <li><a href="#"><img src="img/bosch-logo.jpg" width="126" height="37" class="Bosch" alt="bosch"></a></li>
-            <li><a href="#"><img src="img/makita-logo.jpg" width="123" height="40" class="Makita" alt="makita"></a></li>
-            <li><a href="#"><img src="img/de-walt-logo.jpg" width="146" height="44" class="Dewalt" alt="dewalt"></a>
-            </li>
-            <li><a href="#"><img src="img/interckol-logo.jpg" width="200" height="88" class="Interckol"
-                  alt="Интерскол"></a></li>
-            <li><a href="#"><img src="img/hitachi-logo.jpg" width="169" height="31" class="Hitachi" alt="hitachi"></a>
-            </li>
-            <li><a href="#"><img src="img/lg-logo.jpg" width="121" height="73" class="Lg" alt="lg"></a></li>
-            <li><a href="#"><img src="img/aeg-logo.jpg" width="151" height="96" class="Aeg" alt="aeg"></a></li>
-            <li><a href="#"><img src="img/metabo-logo.jpg" width="204" height="69" class="Metabo" alt="metabo"></a></li>
+        
+          <ul class="list-makers">
+            <li class="item-makers"><a href="#"><img src="img/bosch-logo.jpg" width="126" height="37" class="Bosch" alt="bosch"></a></li>
+            <li class="item-makers"><a href="#"><img src="img/makita-logo.jpg" width="123" height="40" class="Makita" alt="makita"></a></li>
+            <li class="item-makers" ><a href="#"><img src="img/de-walt-logo.jpg" width="146" height="44" class="Dewalt" alt="dewalt"></a></li>
+            <li class="item-makers"><a href="#"><img src="img/interckol-logo.jpg" width="200" height="88" class="Interckol" alt="Интерскол"></a></li>
+            <li class="item-makers"><a href="#"><img src="img/hitachi-logo.jpg" width="169" height="31" class="Hitachi" alt="hitachi"></a></li>
+            <li class="item-makers" ><a href="#"><img src="img/lg-logo.jpg" width="121" height="73" class="Lg" alt="lg"></a></li>
+            <li class="item-makers"><a href="#"><img src="img/aeg-logo.jpg" width="151" height="96" class="Aeg" alt="aeg"></a></li>
+            <li class="item-makers"><a href="#"><img src="img/metabo-logo.jpg" width="204" height="69" class="Metabo" alt="metabo"></a></li>
           </ul>
-        </div>
+        
       </section>
     </div>
 

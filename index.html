@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&PT+Sans:400,700&amp;subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -78,13 +78,13 @@
           </div>
           <div class="box slides-index">
             <div class="slides-image">
+              <h3 class="slider-name">Дрели</h3>
+              <h3 class="slider-name">Перфораторы</h3>
               <label class="slider-first" for="slider-first">
-                <h3 class="slider-name">Дрели</h3>
-                <p>Соседям на радость!</p>
+              Соседям на радость!
               </label>
-              <label class="slider-next" class="hidden" for="slider-next">
-                <h3 class="slider-name">Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
+              <label class="slider-next hidden" for="slider-next">
+              Настоящие мужские игрушки
               </label>
             </div>
             <div class="slides-control">
@@ -197,7 +197,7 @@
         </div>
         <div class="slider">
           <ul class="slider-control">
-            <li class="slide-radio"><button class="button-slide" checked>Доставка</button></li>
+            <li class="slide-radio"><button class="button-slide">Доставка</button></li>
             <li class="slide-radio"><button class="button-slide">Гарантия</button></li>
             <li class="slide-radio"><button class="button-slide">Кредит</button></li>
           </ul>
@@ -249,7 +249,7 @@
         <div class="column-right">
           <h3 class="company">Контакты</h3>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a class="min-map"href="map.html"><img src="img/map.jpg" width="300" height="158"
+          <a class="min-map" href="map.html"><img src="img/map.jpg" width="300" height="158"
               alt="Карта офиса по адресу ул. Большая Конюшенная, 19"></a>
           <a class="button button-contacts" href="contacts.html">Заблудились? Напишите нам!</a>
         </div>
@@ -316,40 +316,42 @@
       </div>
     </div>
   </footer>
-</body>
 
-<section class="modal modal-letter">
-  <h2 class="visually-hidden">Напишите нам</h2>
-  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-  <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
-    <p><label for="yours-name">Ваше имя:</label>
-      <input type="text" id="yours-name" name="yours-name" placeholder="Имя Фамилия" focus required>
-    </p>
-    <p><label for="e-mail">Ваш e-mail:</label>
-      <input type="text" id="e-mail" name="e-mail" placeholder="email@example.com" required>
-    </p>
-    <p><label for="letter">Текст письма:</label>
-      <textarea type="text" id="letter" name="letter" rows="4" placeholder="В свободной форме" required></textarea>
-    </p>
-    <div class="modal-button">
-      <batton class="button button-send" type="submit">Отправить</batton>
+
+  <section class="modal modal-letter">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+      <p><label for="yours-name">Ваше имя:</label>
+        <input type="text" id="yours-name" name="yours-name" placeholder="Имя Фамилия" required>
+      </p>
+      <p><label for="e-mail">Ваш e-mail:</label>
+        <input type="text" id="e-mail" name="e-mail" placeholder="email@example.com" required>
+      </p>
+      <p><label for="letter">Текст письма:</label>
+        <textarea id="letter" name="letter" rows="4" placeholder="В свободной форме" required></textarea>
+      </p>
+      <div class="modal-button">
+        <button class="button button-send" type="submit">Отправить</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="modal modal-backet">
+    <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+    <h2 class="modal-title">Товар добавлен в корзину!</h2>
+    <div class="order-catalog">
+      <a class="button button-order" href="order.html">Оформить заказ</a>
+      <a class="button button-continue" href="catalog.html">Продолжить покупки</a>
     </div>
-  </form>
-</section>
+  </section>
 
-<section class="modal modal-backet">
-  <button class="modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-  <h2 class="modal-title">Товар добавлен в корзину!</h2>
-  <div class="order-catalog">
-    <a class="button button-order" href="order.html">Оформить заказ</a>
-    <a class="button button-continue" href="catalog.html">Продолжить покупки</a>
-  </div>
-</section>
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <button class="modal-close" type="button"><span>Закрыть</span></button>
+    <img src="img/big-map.jpg" width="940" height="446" alt="Карта офиса по адресу ул. Большая Конюшенная, 19">
+  </section>
 
-<section class="modal modal-map">
-  <h2 class="visually-hidden">Как до нас добраться</h2>
-  <button class="modal-close" type="button"><span>Закрыть</span></button>
-  <img src="img/big-map.jpg" width="940" height="446.2" alt="Карта офиса по адресу ул. Большая Конюшенная, 19">
-</section>
+</body>
 
 </html>

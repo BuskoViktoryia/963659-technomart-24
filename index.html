@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&PT+Sans:400,700&amp;subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -18,8 +18,8 @@
           <img src="img/logo.png" width="111" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input type="text" name="search" value="Поиск:" placeholder="Поиск:">
-
+          <input type="submit" name="search-icon" value="Поиск">
+          <input type="text" name="search" placeholder="Поиск:">
         </form>
         <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
         <a class="main-header-basket" href="basket.html">Корзина: 0</a>
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <nav class=" main-navigation">
+      <nav class="main-navigation">
         <ul class="navigation-list ">
           <li><a href="main.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
@@ -76,27 +76,33 @@
             <h3>Техника</h3>
             <a class="button button-services" href="#">Для стройки</a>
           </div>
-          <div class="box slides-index">
-            <div class="slides-image">
-              <h3 class="slider-name">Дрели</h3>
-              <h3 class="slider-name">Перфораторы</h3>
-              <label class="slider-first" for="slider-first">
-              Соседям на радость!
-              </label>
-              <label class="slider-next hidden" for="slider-next">
-              Настоящие мужские игрушки
-              </label>
+
+          <div class="slider">
+            <div class="slides">
+              <div class="slide-prev" checked="">
+                <h3>Дрели</h3>
+                <p>Соседям на радость!</p>
+                <a class="button button-slides" href="catalog.html">Открыть каталог</a>
+              </div>
+              <div class="slide-next">
+                <h3>Перфораторы</h3>
+                <p>Настоящие мужские игрушки</p>
+                <a class="button button-slides" href="catalog.html">Открыть каталог</a>
+              </div>
             </div>
-            <div class="slides-control">
-              <input type="radio" name="slider-1" id="slider-first" checked="checked">
-              <input type="radio" name="slider-2" id="slider-next">
+
+            <div class="button-arrow">
+              <button class="button-arrow-next" aria-label="Следующий слайд"></button></li>
+              <button class="button-arrow-prev" aria-label="Предыдущий слайд"></button></li>
             </div>
-            <div class="slides-arrow">
-              <label for="slider-first">Предыдущий</label>
-              <label for="slider-next">Следующий</label>
-            </div>
-            <a class="button button-slides" href="catalog.html">Открыть каталог</a>
+
+            <ul class="slides-switches">
+              <li class="slide-radio slide-radio-activ"><button class="button-radio"
+                  aria-label="Текущий слайд"></button></li>
+              <li class="slide-radio"><button class="button-radio" aria-label="Следующий слайд"></button></li>
+            </ul>
           </div>
+
           <div>
             <div class="box type-services-sale">
               <h3>Скидки 50%</h3>
@@ -109,6 +115,7 @@
           </div>
         </div>
       </section>
+
 
       <section class="popular">
         <div class="popular-goods">
@@ -195,33 +202,33 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <div class="slider">
+        <div class="services-slider">
           <ul class="slider-control">
-            <li class="slide-radio"><button class="button-slide">Доставка</button></li>
-            <li class="slide-radio"><button class="button-slide">Гарантия</button></li>
-            <li class="slide-radio"><button class="button-slide">Кредит</button></li>
+            <li><button type="radio" class="button-slide button-slide-delivery" checked>Доставка</button></li>
+            <li><button type="radio" class="button-slide button-slide-assurance">Гарантия</button></li>
+            <li><button type="radio" class="button-slide button-slide-credit">Кредит</button></li>
           </ul>
 
           <div class="slide-windows">
-            <div class="slide-windows-delivery">
+            <div class="slide-windows-delivery ">
               <h3>Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо<br>
                 к вашему подъезду совершенно бесплатно!
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
             </div>
-            <div class="slide-windows-assurance visually-hidden">
+            <div class="slide-windows-assurance">
               <h3>Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит,<br>
                 а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей
                 гарантии.
                 Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
             </div>
-            <div class="slide-windows-credit visually-hidden">
+            <div class="slide-windows-credit">
               <h3>Кредит</h3>
               <p>Залезть в долговую яму стало проще!<br>
                 Кредитные консультанты придут вам на помощь.</p>
-              <a class="button button-slides" href="contacts.html">Отправить заявку</a>
+              <a class="button button-credit" href="contacts.html">Отправить заявку</a>
             </div>
           </div>
         </div>
@@ -236,7 +243,7 @@
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
             строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
           </p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="transport-company">
@@ -270,17 +277,17 @@
       </div>
       <nav class="footer-navigation">
         <ul class="footer-info">
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a class="footer-button" href="company.html">Компания</a></li>
+          <li><a class="footer-button" href="news.html">Новости</a></li>
+          <li><a class="footer-button" href="catalog.html">Каталог</a></li>
+          <li><a class="footer-button" href="delivery.html">Доставка</a></li>
+          <li><a class="footer-button" href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="footer-goods">
-          <li><a href="materials.html">Материалы</a></li>
-          <li><a href="technics.html">Техника</a></li>
-          <li><a href="tools.html">Инструмент</a></li>
-          <li><a href="specials.html">Спецпредложения</a></li>
+          <li><a class="footer-button footer-button-goods" href="materials.html">Материалы</a></li>
+          <li><a class="footer-button footer-button-goods" href="technics.html">Техника</a></li>
+          <li><a class="footer-button footer-button-goods" href="tools.html">Инструмент</a></li>
+          <li><a class="footer-button footer-button-goods" href="specials.html">Спецпредложения</a></li>
         </ul>
       </nav>
     </div>
@@ -288,7 +295,7 @@
     <div class="footer-bottom">
       <div class="container">
         <p class="footer-copyright">
-          © 2010–2019 Компания «Техномарт»<br>
+          © 2010–2019 Компания «Техномарт»
           Все права защищены
         </p>
 
@@ -305,12 +312,13 @@
 
         <div class="email-copyright">
           <p class="footer-email">
-            <span>Обратная связь:</span>
-            <a class="button-social" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+            <span>Обратная связь - </span>
+            <a class="footer-button footer-button-social" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="footer-developed">
-            <span>Разработано- </span>
-            <a class="button-social" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <span>Разработано - </span>
+            <a class="footer-button footer-button-social"
+              href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>

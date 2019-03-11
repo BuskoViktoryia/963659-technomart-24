@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&PT+Sans:400,700&amp;subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -18,11 +18,11 @@
           <img src="img/logo.png" width="111" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <input id="search" type="text" name="search" value="Поиск" placeholder="Поиск:">
-
+          <button type="submit" name="search-icon" value="Поиск"></button>
+          <input type="text" name="search" placeholder="Поиск:">
         </form>
         <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
-        <a class="main-header-basket" href="basket.html">Корзина: 10</a>
+        <a class="main-header-basket main-header-current" href="basket.html">Корзина: 10</a>
         <a class="main-header-order" href="order.html">Оформить заказ</a>
       </div>
     </div>
@@ -41,8 +41,8 @@
 
         <div class="login-link">
           <div class="account">
-            <a class="login-link-enter" href="personal-account.html"><span>Равшан Джамшутович</span></a>
-            <a class="login-link-exit" href="index.html" title="Выйти">Выйти</a>
+            <a class="login-link-enter" href="personal-account.html">Равшан Джамшутович</a>
+            <a class="login-link-exit" href="deauthorization.html"></a>
           </div>
           <div class="user-navigation">
             <a href="personal-order.html">Мои заказы</a>
@@ -68,7 +68,7 @@
   <main class="inner-peage">
     <div class="container">
       <ul class="breadcrumbs">
-        <li><a class="breadcrumbs-home" href="index.html"><span class="visually-hidden">Главная</span></a></li>
+        <li><a class="breadcrumbs-home" href="index.html"></a></li>
         <li><a class="breadcrumbs-catalog" href="catalog.html">Каталог</a></li>
         <li><a class="breadcrumbs-tools" href="tools.html">Инструмент</a></li>
         <li><a class="breadcrumbs-current">Перфораторы</a></li>
@@ -78,25 +78,34 @@
       <div class="catalog-columns">
         <section class="filters">
           <h3 class="catalog-filter">Фильтр:</h3>
-          <form action="https://echo.htmlacademy.ru" method="get">
+          <form class="type-filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters-price">
               <legend class="name-filters-price">Цена:</legend>
-              <input type="number" id="min" name="price" min="0" value="0" step="1">—
-              <input type="number" id="max" name="price" max="30000" value="30000" step="1">
+              <div class="range-filters" type="range">
+                <div class="range-filtres-scale"></div>
+                <div class="range-filtres-scale-active">
+                  <div class="range-filtres-point-right"></div>
+                  <div class="range-filtres-point-left"></div>
+                </div>
+              </div>
+              <div class="range-price">
+                <input type="number" id="min" name="price" min="0" value="0" step="100">—
+                <input type="number" id="max" name="price" max="30000" value="30000" step="100">
+              </div>
             </fieldset>
             <fieldset class="filters-makers">
               <legend class="name-filters-maker">Производители:</legend>
               <div class="filters-makers-list">
-              <input type="checkbox" id="bosch" name="bosch" value="bosch">
-              <label for="bosch">Bosch</label>
-              <input type="checkbox" id="intersckol" name="intersckol" value="интерскол">
-              <label for="intersckol">Интерскол</label>
-              <input type="checkbox" id="makita" name="makita" value="makita">
-              <label for="makita">Makita</label>
-              <input type="checkbox" id="dewalt" name="dewalt" value="dewalt">
-              <label for="dewalt">Dewalt</label>
-              <input type="checkbox" id="hitachi" name="hitachi" value="hitachi">
-              <label for="hitachi">Hitachi</label>
+                <input type="checkbox" id="bosch" name="bosch" value="bosch" checked>
+                <label for="bosch">Bosch</label>
+                <input type="checkbox" id="intersckol" name="intersckol" value="интерскол">
+                <label for="intersckol">Интерскол</label>
+                <input type="checkbox" id="makita" name="makita" value="makita" checked>
+                <label for="makita">Makita</label>
+                <input type="checkbox" id="dewalt" name="dewalt" value="dewalt">
+                <label for="dewalt">Dewalt</label>
+                <input type="checkbox" id="hitachi" name="hitachi" value="hitachi">
+                <label for="hitachi">Hitachi</label>
               </div>
             </fieldset>
             <fieldset class="filters-power">
@@ -112,12 +121,18 @@
 
         <section class="catalog">
           <h2 class="visually-hidden">Список перфораторов</h2>
-          
+
           <div class="sort-type">
             <h3 class="catalog-sort">Сортировка:</h3>
-            <a class="sort" href="catalog.html">По цене</a>
-            <a class="sort" href="catalog.html">По типу</a>
-            <a class="sort" href="catalog.html">По функционалу</a>
+            <ul class="sorting-types">
+              <li><a class="sort sort-current" href="catalog.html">По цене</a></li>
+              <li><a class="sort" href="catalog.html">По типу</a></li>
+              <li><a class="sort" href="catalog.html">По функционалу</a></li>
+              <div class="dirup-dirdown">
+                <li><a class="sort-dirup current" href="catalog.html" aria-label="по возрастанию"></a></li>
+                <li><a class="sort-dirdown" href="catalog.html" aria-label="по убыванию"></a></li>
+              </div>
+            </ul>
           </div>
 
           <ul class="catalog-list">
@@ -218,10 +233,10 @@
             </li>
           </ul>
           <ul class="pagination-list">
-            <li><a class="pagination-item-сurrent" href="catalog.html">1</a></li>
+            <li><a class="pagination-item pagination-item-сurrent" href="catalog.html">1</a></li>
             <li><a class="pagination-item" href="#">2</a></li>
             <li><a class="pagination-item" href="#">3</a></li>
-            <li><a class="pagination-item-next" href="#+1">Следующая</a></li>
+            <li><a class="pagination-item pagination-item-next" href="#+1">Следующая</a></li>
           </ul>
         </section>
       </div>
@@ -255,17 +270,17 @@
       </div>
       <nav class="footer-navigation">
         <ul class="footer-info">
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a class="footer-button" href="company.html">Компания</a></li>
+          <li><a class="footer-button" href="news.html">Новости</a></li>
+          <li><a class="footer-button" href="catalog.html">Каталог</a></li>
+          <li><a class="footer-button" href="delivery.html">Доставка</a></li>
+          <li><a class="footer-button" href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="footer-goods">
-          <li><a href="materials.html">Материалы</a></li>
-          <li><a href="technics.html">Техника</a></li>
-          <li><a href="tools.html">Инструмент</a></li>
-          <li><a href="specials.html">Спецпредложения</a></li>
+          <li><a class="footer-button footer-button-goods" href="materials.html">Материалы</a></li>
+          <li><a class="footer-button footer-button-goods" href="technics.html">Техника</a></li>
+          <li><a class="footer-button footer-button-goods" href="tools.html">Инструмент</a></li>
+          <li><a class="footer-button footer-button-goods" href="specials.html">Спецпредложения</a></li>
         </ul>
       </nav>
     </div>
@@ -273,7 +288,7 @@
     <div class="footer-bottom">
       <div class="container">
         <p class="footer-copyright">
-          © 2010–2017 Компания «Техномарт»<br>
+          © 2010–2017 Компания «Техномарт»
           Все права защищены
         </p>
 
@@ -291,11 +306,11 @@
         <div class="email-copyright">
           <p class="footer-email">
             <span>Обратная связь - </span>
-            <a class="button-social" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="footer-button footer-button-social" href="https://htmlacademy.ru">mail@htmlacademy.ru</a>
           </p>
           <p class="footer-developed">
             <span>Разработано - </span>
-            <a class="button-social" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            <a class="footer-button footer-button-social" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
       </div>

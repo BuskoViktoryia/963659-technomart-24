@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic"
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&amp;subset=cyrillic"
     rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,12 +14,18 @@
   <header class="main-header">
     <div class="header-top">
       <div class="container">
-        <a class="main-header-logo" href="index.html">
+        <a class="logo main-header-logo" href="index.html">
           <img src="img/logo.png" width="111" height="18" alt="Логотип магазина «Техномарт»">
         </a>
         <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <button type="submit" name="search-icon" value="Поиск"></button>
-          <input type="text" name="search" placeholder="Поиск:">
+          <div class="search-field">
+            <input class="search-field-input" type="text" name="search" placeholder="Поиск:">
+            <button class="search-field-button" aria-label="Поиск">
+                <svg width="17" height="17" viewBox="0 0 17 17" class="svg-icon" focusable="false">
+                  <path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+                </svg>
+            </button>
+          </div>
         </form>
         <a class="main-header-bookmarks" href="bookmarks.html">Закладки: 0</a>
         <a class="main-header-basket main-header-current" href="basket.html">Корзина: 10</a>
@@ -29,7 +35,7 @@
 
     <div class="container">
       <div class="header-bottom">
-        <h1 class="title">
+        <h1 class="general-title">
           Интернет-магазин строительных материалов
           и&nbsp;инструментов для ремонта
         </h1>
@@ -81,11 +87,11 @@
           <form class="type-filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filters-price">
               <legend class="name-filters-price">Цена:</legend>
-              <div class="range-filters" type="range">
+              <div class="range-filters">
                 <div class="range-filtres-scale"></div>
                 <div class="range-filtres-scale-active">
-                  <div class="range-filtres-point-right"></div>
-                  <div class="range-filtres-point-left"></div>
+                  <button class="range-filtres-point-right"></button>
+                  <button class="range-filtres-point-left"></button>
                 </div>
               </div>
               <div class="range-price">
@@ -128,10 +134,10 @@
               <li><a class="sort sort-current" href="catalog.html">По цене</a></li>
               <li><a class="sort" href="catalog.html">По типу</a></li>
               <li><a class="sort" href="catalog.html">По функционалу</a></li>
-              <div class="dirup-dirdown">
-                <li><a class="sort-dirup current" href="catalog.html" aria-label="по возрастанию"></a></li>
-                <li><a class="sort-dirdown" href="catalog.html" aria-label="по убыванию"></a></li>
-              </div>
+              <li class="triangle-sort">
+                <a class="triangle-current" href="catalog.html" aria-label="по возрастанию"></a>
+                <a href="catalog.html" aria-label="по убыванию"></a>
+              </li>
             </ul>
           </div>
 
@@ -141,7 +147,7 @@
               <h3> Перфоратор BOSCH BFG&nbsp;3000</h3>
               <span class="price">22500 P.</span>
               <span class="price-sale">15500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -152,7 +158,7 @@
               <h3> Перфоратор BOSCH BFG&nbsp;6000</h3>
               <span class="price">30500 P.</span>
               <span class="price-sale">25500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -162,7 +168,7 @@
               <img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <h3> Перфоратор BOSCH BFG&nbsp;2000</h3>
               <span class="price-sale">12500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -173,7 +179,7 @@
               <h3> Перфоратор BOSCH BFG&nbsp;3000</h3>
               <span class="price">22500 P.</span>
               <span class="price-sale">15500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -184,7 +190,7 @@
               <h3> Перфоратор BOSCH BFG&nbsp;6000</h3>
               <span class="price">30500 P.</span>
               <span class="price-sale">25500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -194,7 +200,7 @@
               <img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <h3> Перфоратор BOSCH BFG&nbsp;2000</h3>
               <span class="price-sale">12500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -205,7 +211,7 @@
               <h3> Перфоратор BOSCH BFG&nbsp;3000</h3>
               <span class="price">22500 P.</span>
               <span class="price-sale">15500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -216,7 +222,7 @@
               <h3> Перфоратор BOSCH BFG&nbsp;6000</h3>
               <span class="price">30500 P.</span>
               <span class="price-sale">25500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -226,7 +232,7 @@
               <img src="img/bosch-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
               <h3> Перфоратор BOSCH BFG&nbsp;2000</h3>
               <span class="price-sale">12500 P.</span>
-              <div class="activ-item">
+              <div class="active-item">
                 <a class="button button-basket" href="basket.html"> Купить</a>
                 <a class="button button-bookmarks" href="bookmarks.html"> В закладки</a>
               </div>
@@ -260,7 +266,7 @@
   <footer class="main-footer">
     <div class="container">
       <div class="contacts-logo">
-        <a class="main-footer-logo">
+        <a class="logo main-footer-logo">
           <img src="img/logo.png" width="138" height="23" alt="Логотип магазина «Техномарт»">
         </a>
         <address class="contacts">
